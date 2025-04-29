@@ -1,5 +1,7 @@
 #include "timer.h"
 #include "../drivers/screen.h"
+#include "../drivers/ports.h"
+#include "../drivers/keyboard.h"
 #include "../kernel/util.h"
 #include "isr.h"
 

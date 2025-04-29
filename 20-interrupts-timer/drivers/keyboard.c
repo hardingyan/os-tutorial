@@ -1,7 +1,10 @@
 #include "keyboard.h"
 #include "ports.h"
 #include "../cpu/isr.h"
-#include "screen.h"
+#include "screen.h" 
+#include "../kernel/util.h"
+
+void print_letter(u8 scancode);
 
 static void keyboard_callback(registers_t regs) {
     /* The PIC leaves us the scancode in port 0x60 */
